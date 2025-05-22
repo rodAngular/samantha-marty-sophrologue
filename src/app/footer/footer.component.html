@@ -1,0 +1,17 @@
+<footer>
+  <div class="contact-info">
+    <p>Contactez-nous :</p>
+    <p>Téléphone : 06 61 67 91 72</p>
+    <p>Email : samanthamartysophro&#64;gmail.com</p>
+  </div>
+
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="contact-form">
+    <input type="text" name="name" ngModel placeholder="Votre nom" required />
+    <input type="email" name="email" ngModel placeholder="Votre email" required />
+    <textarea name="message" ngModel placeholder="Votre message" required></textarea>
+    <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+  </form>
+
+  <p>© 2025 Samantha Marty - Sophrologue. Tous droits réservés.</p>
+  <p>N°SIRET: 93363617700018</p>
+</footer>
