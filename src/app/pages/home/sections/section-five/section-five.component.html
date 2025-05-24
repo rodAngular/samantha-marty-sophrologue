@@ -1,1 +1,19 @@
-<p>section-five works!</p>
+<section class="section-five">
+  <div class="slide-container">
+
+    <div class="slide" *ngFor="let slide of slides; let i = index">
+      <div *ngIf="i === currentIndex" class="slide active">
+        <img [src]="slide.image" [alt]="slide.name" />
+        <div class="overlay-text">
+          <h3>TEMOIGNAGES</h3>
+          <p class="description">"&nbsp;<em>{{ slide.text }}</em>&nbsp;"</p>
+          <p class="name">{{ slide.name }}</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn prev" (click)="prev()">&#10094;</button>
+    <button class="btn next" (click)="next()">&#10095;</button>
+
+  </div>
+</section>

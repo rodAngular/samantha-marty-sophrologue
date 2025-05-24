@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-section-four',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './section-four.component.html',
-  styleUrl: './section-four.component.css'
+  styleUrls: ['./section-four.component.css']
 })
-export class SectionFourComponent {
-
-}
+export class SectionFourComponent {}

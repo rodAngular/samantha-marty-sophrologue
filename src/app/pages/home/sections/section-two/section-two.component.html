@@ -1,1 +1,14 @@
-<p>section-two works!</p>
+<section class="section-two">
+  <div class="card-grid">
+    <div class="card" *ngFor="let card of cards">
+      <img [src]="card.image" [alt]="card.title" />
+      <h4>{{ card.title }}</h4>
+      <p>
+        {{ card.expanded ? card.text : (card.text | slice:0:100) + '...' }}
+        <button (click)="toggle(card)">
+          {{ card.expanded ? 'Réduire' : 'Lire la suite' }}
+        </button>
+      </p>
+    </div>
+  </div>
+</section>
