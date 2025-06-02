@@ -20,9 +20,13 @@
 }
 
 .card img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* rend l'image parfaitement circulaire */
+  border: 4px solid #96bfa7; /* facultatif : une bordure élégante */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* facultatif : ombre portée */
+  margin-bottom: 1rem;
 }
 
 .card h4 {

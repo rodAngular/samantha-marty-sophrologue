@@ -16,24 +16,33 @@
 }
 
 .image-left {
-  /*background-image: url('assets/images/bg-left.jpg'); /* remplace par ton image */
+  background-image: url('../../../../../assets/images/Samantha-Marty-Sophrologue-Annecy.jpeg');
+  height: auto;
+  width: auto;
 }
 
 .image-right {
- /* background-image: url('assets/images/bg-right.jpg'); /* remplace par ton image */
+  background-image: url('../../../../../assets/images/seance-cabinet-sophro.jpeg');
+}
+
+.text-center h3 {
+  /*margin-bottom: 1rem;
+  font-size: 1.8rem;*/
+  color: #FF6161;
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .text-center {
   flex: 2;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center;*/
   background-color: #fff;
   text-align: center;
-}
-
-.text-center h3 {
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
+  line-height: 1.3;
 }
