@@ -1,12 +1,15 @@
 .section-four {
   background-color: #fff;
-  padding: 60px 20px;
+  /*padding: 60px 20px;*/
+  padding: 1rem 3rem;
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .section-four h3 {
   font-size: 24px;
   margin-bottom: 30px;
+  margin-top: 0;
   color: #333;
 }
 
